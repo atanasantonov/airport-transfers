@@ -1,31 +1,69 @@
-name: Deploy to WordPress.org
 on:
   push:
     branches:
       - master
     tags:
       - '*.*.*'
+
+name: Plugin Release
+
 jobs:
-  tag:
-    name: New release
+  build:
+    name: Plugin Release Creation
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-    - name: WordPress Plugin Deploy
-      id: deploy
-      uses: 10up/action-wordpress-plugin-deploy@stable
-      with:
-        generate-zip: true
-      env:
-        SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
-        SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
-    - name: Upload release asset
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.TOKEN }}
-      with:
-        upload_url: ${{ github.event.release.upload_url }}
-        asset_path: ${{ steps.deploy.outputs.zip-path }}
-        asset_name: ${{ github.event.repository.name }}.zip
-        asset_content_type: application/zip
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+
+      - name: Get version
+        id: vars
+        run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
+
+      - name: Generate Changelog
+        uses: scottbrenner/generate-changelog-action@master
+        id: Changelog
+        env:
+          REPO: ${{ github.repository }}
+
+      - name: Get composer cache directory
+        id: composercache
+        run: echo "::set-output name=dir::$(composer config cache-files-dir)"
+
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.composercache.outputs.dir }}
+          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: ${{ runner.os }}-composer-
+
+      - name: Prepare release
+        run: |
+          sed -ix "s/Stable tag: .*/Stable tag: ${{ steps.vars.outputs.tag }}/" readme.txt
+          sed -ix "s/Version: .*/Version: ${{ steps.vars.outputs.tag }}/" airport-transfers.php
+          sed -ix "s/define( 'NS_AIRPORT_TRANSFERS_VERSION'.*/define( 'NS_AIRPORT_TRANSFERS_VERSION', '${{ steps.vars.outputs.tag }}' );/" airport-transfers.php
+          rm -f readme.txtx airport-transfers.phpx
+        shell: bash
+
+      - name: Push to WordPress Plugin Deploy
+        uses: 10up/action-wordpress-plugin-deploy@stable
+        with:
+          generate-zip: true
+        env:
+          SLUG: airport-transfers
+          VERSION: ${{ steps.vars.outputs.tag }}
+          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+        with:
+          files: ${{ github.event.repository.name }}.zip
+          tag_name: ${{ steps.vars.outputs.tag }}
+          name: Release ${{ steps.vars.outputs.tag }}
+          body: |
+            ${{ steps.Changelog.outputs.changelog }}
