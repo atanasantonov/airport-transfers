@@ -1,7 +1,5 @@
 on:
   push:
-    branches:
-      - master
     tags:
       - '*.*.*'
 
@@ -62,7 +60,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
         with:
-          files: ${{ github.event.repository.name }}.zip
+          files: airport-transfers.zip
           tag_name: ${{ steps.vars.outputs.tag }}
           name: Release ${{ steps.vars.outputs.tag }}
           body: |
