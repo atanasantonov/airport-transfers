@@ -4,9 +4,14 @@ Special airport transfers form that delivers mail to an administrator with custo
 
 Form is designed to serve as transfer order tool. Design is airport transfers ready.
 
-The plugin has full l10n and i18n support. Polylang compatible!
+The plugin has full l10n and i18n support.
 
 There are several options like mails for the delivery and default settings.
+
+= Features =
+* Simple & Intuitive
+* Flexible transfer reservation form
+* Multiple emails can be used for notifications
 
 ## Installation
 
