@@ -24,9 +24,9 @@ After the settings are done and the shortcode is placed on the desired pages you
 
 ## Screenshots
 
-![This screen shows the settings page](.wordpress-org/screenshot-1.png?raw=true "Settings page")
+![This screen shows the settings page](.wordpress-org/screenshot-1.jpg?raw=true "Settings page")
 
-![This screen shows the form in the page on the frontend](.wordpress-org/screenshot-2.png?raw=true "Form on the frontend")
+![This screen shows the form in the page on the frontend](.wordpress-org/screenshot-2.jpg?raw=true "Form on the frontend")
 
 ## Frequently Asked Questions
 
