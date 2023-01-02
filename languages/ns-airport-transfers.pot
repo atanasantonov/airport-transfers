@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Airport Transfers\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-02 17:34+0000\n"
+"POT-Creation-Date: 2023-01-02 17:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -115,9 +115,7 @@ msgid "Hours"
 msgstr ""
 
 #. URI of the plugin
-msgid ""
-"https://github.com/atanasantonov/wordpress-plugins/tree/master/airport-"
-"transfers"
+msgid "https://github.com/atanasantonov/airport-transfers"
 msgstr ""
 
 #. Author URI of the plugin

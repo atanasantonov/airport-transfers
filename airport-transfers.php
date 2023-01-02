@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Airport Transfers
-Plugin URI:  https://github.com/atanasantonov/wordpress-plugins/tree/master/airport-transfers
+Plugin URI:  https://github.com/atanasantonov/airport-transfers
 Description: Plugin delivers multilingual form for airport transfers
 Version:     1.1
 Author:      Atanas Antonov

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Airport Transfers\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-02 17:34+0000\n"
-"PO-Revision-Date: 2023-01-02 17:54+0000\n"
+"PO-Revision-Date: 2023-01-02 17:51+0000\n"
 "Last-Translator: \n"
 "Language-Team: Български\n"
 "Language: bg_BG\n"
@@ -210,84 +210,78 @@ msgstr "Поискайте повече информация"
 
 #: admin/views/settings-page.php:46
 msgid "Resort type"
-msgstr "Тип курорт"
+msgstr ""
 
 #: public/views/form.php:120 public/views/form.php:178
 msgid "select"
-msgstr "изберете"
+msgstr ""
 
 #: admin/views/settings-page.php:59
 msgid ""
 "Select default resort type (also can be set in the shortcode [airport-"
 "transfers-form resort=\"summer/winter\"])"
 msgstr ""
-"Изберете типа курорт по подразбиране (също може да бъде зададен в краткия "
-"код [airport-transfers-form resort=\"summer/winter\"])"
 
 #: admin/views/settings-page.php:74
 msgid ""
 "Select default time-format (also can be set in the shortcode [airport-"
 "transfers-form time-format=\"24\"])"
 msgstr ""
-"Изберете формат на часа по подразбиране (също може да бъде зададен в краткия "
-"код [airport-transfers-form time-format=\"24\"])"
 
 #: public/views/form.php:217
 msgid "Send"
-msgstr "Изпрати"
+msgstr ""
 
 #: admin/views/settings-page.php:41
 msgid ""
 "Set the country (also can be set in the shortcode [airport-transfers-form "
 "country=\"Earthsea\"])"
 msgstr ""
-"Задайте държавата (също може да бъде зададена в краткия код [airport-"
-"transfers-form country=\"Землемория\"])"
 
 #: admin/views/settings-page.php:5
 msgid "Styling and functionality settings"
-msgstr "Настройки за стил и функционалност"
+msgstr ""
 
 #: public/class-airport-transfers.php:59
 msgid "System Error"
-msgstr "Системна грешка"
+msgstr ""
 
 #: public/class-airport-transfers.php:206
 msgid "System Error!"
-msgstr "Системна грешка!"
+msgstr ""
 
 #: public/class-airport-transfers.php:210
 msgid "Thank you for your submission! We will answer as soon as possible!"
-msgstr "Благодарим ви за заявката! Ще отговорим възможно най-скоро!"
+msgstr ""
 
 #: admin/views/settings-page.php:64
 msgid "Time format"
-msgstr "Времеви формат"
+msgstr ""
 
 #: public/class-airport-transfers.php:172 public/views/form.php:90
 msgid "Time of arrival"
-msgstr "Време на пристигане"
+msgstr ""
 
 #: public/class-airport-transfers.php:183 public/views/form.php:148
 msgid "Time of departure"
-msgstr "Час на тръгване"
+msgstr ""
 
 #: public/views/form.php:47 public/views/form.php:138
 msgid "To airport"
-msgstr "До летище"
+msgstr ""
 
 #: public/class-airport-transfers.php:151 public/views/form.php:42
 msgid "Transfer type"
-msgstr "Тип трансфер"
+msgstr ""
 
 #: public/views/form.php:45
 msgid "Two way"
-msgstr "Двупосочен"
+msgstr ""
 
 #: public/class-airport-transfers.php:55 public/class-airport-transfers.php:147
 msgid "Your Name"
-msgstr "Вашето име"
+msgstr ""
 
 #: public/views/form.php:11
 msgid "Your name"
-msgstr "Вашето име"
+msgstr ""
