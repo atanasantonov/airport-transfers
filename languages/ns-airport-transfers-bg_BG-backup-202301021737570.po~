@@ -1,0 +1,287 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Airport Transfers\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-02 17:34+0000\n"
+"PO-Revision-Date: 2023-01-02 17:34+0000\n"
+"Last-Translator: \n"
+"Language-Team: Български\n"
+"Language: bg_BG\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.2; wp-6.0.3\n"
+"X-Domain: ns-airport-transfers"
+
+#: public/class-airport-transfers.php:190 public/views/form.php:197
+msgid "Address in"
+msgstr ""
+
+#: public/class-airport-transfers.php:191 public/views/form.php:202
+msgid "Address of hotel/accommodation"
+msgstr ""
+
+#: admin/views/settings-page.php:14
+msgid "Admin email/emails"
+msgstr ""
+
+#: public/views/form.php:80
+msgid "After arrival"
+msgstr ""
+
+#: public/class-airport-transfers.php:173
+#: public/class-airport-transfers.php:184 public/views/form.php:117
+#: public/views/form.php:175
+msgid "Airport"
+msgstr ""
+
+#. Name of the plugin
+msgid "Airport Transfers"
+msgstr ""
+
+#. Author of the plugin
+msgid "Atanas Antonov"
+msgstr ""
+
+#: public/views/modal-error.php:7 public/views/modal-error.php:22
+msgid "Close"
+msgstr ""
+
+#: admin/views/settings-page.php:22
+msgid "Contact email"
+msgstr ""
+
+#: admin/views/settings-page.php:25
+msgid "Contact email."
+msgstr ""
+
+#: admin/views/settings-page.php:30
+msgid "Contact phone/phones"
+msgstr ""
+
+#: admin/views/settings-page.php:33
+msgid "Contact phone/phones."
+msgstr ""
+
+#: public/class-airport-transfers.php:171 public/views/form.php:83
+msgid "Date of arrival"
+msgstr ""
+
+#: public/class-airport-transfers.php:182 public/views/form.php:141
+msgid "Date of departure"
+msgstr ""
+
+#: admin/views/settings-page.php:38
+msgid "Default destination country"
+msgstr ""
+
+#: public/class-airport-transfers.php:56 public/class-airport-transfers.php:148
+msgid "Email Address"
+msgstr ""
+
+#: public/views/form.php:18
+msgid "Email address"
+msgstr ""
+
+#: admin/views/settings-page.php:17
+msgid ""
+"Email/emails for delivery. Comma separated if more than one (admin1@example."
+"com, admin2@example.com, ...)"
+msgstr ""
+
+#: public/views/modal-error.php:8
+msgid "Error"
+msgstr ""
+
+#: public/class-airport-transfers.php:174
+#: public/class-airport-transfers.php:185 public/views/form.php:129
+#: public/views/form.php:187
+msgid "Flight number"
+msgstr ""
+
+#: public/views/form.php:46 public/views/form.php:80
+msgid "From airport"
+msgstr ""
+
+#: public/views/form.php:93 public/views/form.php:151
+msgid "Hour"
+msgstr ""
+
+#: admin/views/settings-page.php:71
+msgid "Hours"
+msgstr ""
+
+#. URI of the plugin
+msgid ""
+"https://github.com/atanasantonov/wordpress-plugins/tree/master/airport-"
+"transfers"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://unax.org"
+msgstr ""
+
+#: public/class-airport-transfers.php:150 public/views/form.php:34
+msgid "I would like to"
+msgstr ""
+
+#: public/class-airport-transfers.php:131
+msgid "Incorrect data!"
+msgstr ""
+
+#: public/views/form.php:8
+msgid "Information about you"
+msgstr ""
+
+#: public/class-airport-transfers.php:137
+msgid "Invalid email address!"
+msgstr ""
+
+#: public/views/form.php:29
+msgid "It's mandatory to input your phone number"
+msgstr ""
+
+#: public/views/form.php:4
+msgid "Javascript must be enabled!"
+msgstr ""
+
+#: public/views/form.php:138
+msgid "Leaving"
+msgstr ""
+
+#: public/views/form.php:36
+msgid "Make reservation"
+msgstr ""
+
+#: public/class-airport-transfers.php:58
+msgid "Mandatory Field"
+msgstr ""
+
+#: public/views/form.php:101 public/views/form.php:159
+msgid "Min"
+msgstr ""
+
+#: public/class-airport-transfers.php:57 public/class-airport-transfers.php:149
+#: public/views/form.php:26
+msgid "Mobile"
+msgstr ""
+
+#: public/class-airport-transfers.php:152 public/views/form.php:53
+msgid "No. of adults"
+msgstr ""
+
+#: public/class-airport-transfers.php:153 public/views/form.php:58
+msgid "No. of children"
+msgstr ""
+
+#: public/class-airport-transfers.php:154 public/views/form.php:65
+msgid "No. of koffers"
+msgstr ""
+
+#: public/class-airport-transfers.php:156 public/views/form.php:71
+msgid "No. of ski/snowboards"
+msgstr ""
+
+#: public/views/form.php:21
+msgid "On this Email you will recieve confirmation"
+msgstr ""
+
+#: public/views/form.php:46 public/views/form.php:47
+msgid "One way"
+msgstr ""
+
+#. Description of the plugin
+msgid "Plugin delivers multilingual form for airport transfers"
+msgstr ""
+
+#: public/class-airport-transfers.php:194 public/views/form.php:211
+msgid "Remarks/instructions"
+msgstr ""
+
+#: public/class-airport-transfers.php:141
+msgid "Request"
+msgstr ""
+
+#: public/views/form.php:37
+msgid "Request more information"
+msgstr ""
+
+#: admin/views/settings-page.php:46
+msgid "Resort type"
+msgstr ""
+
+#: public/views/form.php:120 public/views/form.php:178
+msgid "select"
+msgstr ""
+
+#: admin/views/settings-page.php:59
+msgid ""
+"Select default resort type (also can be set in the shortcode [airport-"
+"transfers-form resort=\"summer/winter\"])"
+msgstr ""
+
+#: admin/views/settings-page.php:74
+msgid ""
+"Select default time-format (also can be set in the shortcode [airport-"
+"transfers-form time-format=\"24\"])"
+msgstr ""
+
+#: public/views/form.php:217
+msgid "Send"
+msgstr ""
+
+#: admin/views/settings-page.php:41
+msgid ""
+"Set the country (also can be set in the shortcode [airport-transfers-form "
+"country=\"Earthsea\"])"
+msgstr ""
+
+#: admin/views/settings-page.php:5
+msgid "Styling and functionality settings"
+msgstr ""
+
+#: public/class-airport-transfers.php:59
+msgid "System Error"
+msgstr ""
+
+#: public/class-airport-transfers.php:206
+msgid "System Error!"
+msgstr ""
+
+#: public/class-airport-transfers.php:210
+msgid "Thank you for your submission! We will answer as soon as possible!"
+msgstr ""
+
+#: admin/views/settings-page.php:64
+msgid "Time format"
+msgstr ""
+
+#: public/class-airport-transfers.php:172 public/views/form.php:90
+msgid "Time of arrival"
+msgstr ""
+
+#: public/class-airport-transfers.php:183 public/views/form.php:148
+msgid "Time of departure"
+msgstr ""
+
+#: public/views/form.php:47 public/views/form.php:138
+msgid "To airport"
+msgstr ""
+
+#: public/class-airport-transfers.php:151 public/views/form.php:42
+msgid "Transfer type"
+msgstr ""
+
+#: public/views/form.php:45
+msgid "Two way"
+msgstr ""
+
+#: public/class-airport-transfers.php:55 public/class-airport-transfers.php:147
+msgid "Your Name"
+msgstr ""
+
+#: public/views/form.php:11
+msgid "Your name"
+msgstr ""

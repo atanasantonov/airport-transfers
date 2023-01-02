@@ -1,0 +1,1 @@
+<?php defined( 'ABSPATH' ) or die( 'I can\'t do anything alone! Sorry!' );
