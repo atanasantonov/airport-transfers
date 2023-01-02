@@ -22,6 +22,12 @@ Example: [airport-transfers-form country="Earthsea" time-format="12" resort="win
 
 After the settings are done and the shortcode is placed on the desired pages you are ready to operate.
 
+## Screenshots
+
+![This screen shows the settings page](.wordpress-org/screenshot-1.png?raw=true "Settings page")
+
+![This screen shows the form in the page on the frontend](.wordpress-org/screenshot-2.png?raw=true "Form on the frontend")
+
 ## Frequently Asked Questions
 
 ### Can I customize where the emails will be delivered?
@@ -55,12 +61,6 @@ Yes, the most important fields are validated twice - both on client's machine an
 ### How can the customer understand that is missing something?
 
 There is a nice gentle modal window that is opened when mandatory field is empty.
-
-## Screenshots
-
-1. This screen shows the settings page (screenshot-1.jpg).
-
-2. This is the second screen shot (screenshot-2.jpg) shows the form in the page on frontend
 
 ## Changelog
 
