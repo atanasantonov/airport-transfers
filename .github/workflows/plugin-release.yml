@@ -1,7 +1,10 @@
 name: Deploy to WordPress.org
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+      - master
+    tags:
+      - '*.*.*'
 jobs:
   tag:
     name: New release
