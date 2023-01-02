@@ -1,4 +1,4 @@
-#  Airport Transfers
+# Airport Transfers
 
 Special airport transfers form that delivers mail to an administrator with customer's data.
 
@@ -8,7 +8,7 @@ The plugin has full l10n and i18n support.
 
 There are several options like mails for the delivery and default settings.
 
-= Features =
+### Features
 * Simple & Intuitive
 * Flexible transfer reservation form
 * Multiple emails can be used for notifications
@@ -69,9 +69,9 @@ There is a nice gentle modal window that is opened when mandatory field is empty
 
 ## Changelog
 
-### 1.1
+1.1
 * Security fixes.
 
-### 1.0
+1.0
 * First release.
 * No changes.

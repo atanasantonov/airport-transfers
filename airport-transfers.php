@@ -3,7 +3,7 @@
 Plugin Name: Airport Transfers
 Plugin URI:  https://github.com/atanasantonov/airport-transfers
 Description: Plugin delivers multilingual form for airport transfers
-Version:     1.1.1
+Version:     1.1.2
 Author:      Atanas Antonov
 Author URI:  https://unax.org
 License:     GPL2
@@ -14,7 +14,7 @@ Domain Path: /languages/
 
 defined( 'ABSPATH' ) or die( 'I can\'t do anything alone! Sorry!' );
 
-define( 'NS_AIRPORT_TRANSFERS_VERSION', '1.1.1' );
+define( 'NS_AIRPORT_TRANSFERS_VERSION', '1.1.2' );
 define( 'NS_AIRPORT_TRANSFERS_PATH', plugin_dir_path( __FILE__ ) );
 define( 'NS_AIRPORT_TRANSFERS_URL', plugins_url( '/', __FILE__ ) );
 
