@@ -1,11 +1,11 @@
-name: Plugin Release
-
 on:
   push:
     branches:
       - master
     tags:
       - '*.*.*'
+
+name: Plugin Release
 
 jobs:
   build:
@@ -22,29 +22,48 @@ jobs:
         id: vars
         run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
 
+      - name: Generate Changelog
+        uses: scottbrenner/generate-changelog-action@master
+        id: Changelog
+        env:
+          REPO: ${{ github.repository }}
+
+      - name: Get composer cache directory
+        id: composercache
+        run: echo "::set-output name=dir::$(composer config cache-files-dir)"
+
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.composercache.outputs.dir }}
+          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: ${{ runner.os }}-composer-
+
       - name: Prepare release
         run: |
+          composer install --no-dev --no-scripts --prefer-dist --optimize-autoloader
           sed -ix "s/Stable tag: .*/Stable tag: ${{ steps.vars.outputs.tag }}/" readme.txt
           sed -ix "s/Version: .*/Version: ${{ steps.vars.outputs.tag }}/" airport-transfers.php
           sed -ix "s/define( 'NS_AIRPORT_TRANSFERS_VERSION'.*/define( 'NS_AIRPORT_TRANSFERS_VERSION', '${{ steps.vars.outputs.tag }}' );/" airport-transfers.php
           rm -f readme.txtx airport-transfers.phpx
         shell: bash
 
-      - name: WordPress Plugin Deploy
-        id: deploy
+      - name: Push to WordPress Plugin Deploy
         uses: 10up/action-wordpress-plugin-deploy@stable
         with:
           generate-zip: true
         env:
+          SLUG: airport-transfers
           SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
           SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
 
-      - name: Upload release asset
-        uses: actions/upload-release-asset@v1
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
         with:
-          upload_url: ${{ github.event.release.upload_url }}
-          asset_path: ${{ steps.deploy.outputs.zip-path }}
-          asset_name: ${{ github.event.repository.name }}.zip
-          asset_content_type: application/zip
+          files: ${{ github.event.repository.name }}.zip
+          tag_name: ${{ steps.vars.outputs.tag }}
+          name: Release ${{ steps.vars.outputs.tag }}
+          body: |
+            ${{ steps.Changelog.outputs.changelog }}
