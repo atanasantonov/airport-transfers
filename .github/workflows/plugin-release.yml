@@ -45,7 +45,7 @@ jobs:
           sed -ix "s/Version: .*/Version: ${{ steps.vars.outputs.tag }}/" airport-transfers.php
           sed -ix "s/define( 'NS_AIRPORT_TRANSFERS_VERSION'.*/define( 'NS_AIRPORT_TRANSFERS_VERSION', '${{ steps.vars.outputs.tag }}' );/" airport-transfers.php
           rm -f readme.txtx airport-transfers.phpx
-        shell: bash
+        shell: bash 
 
       - name: Push to WordPress Plugin Deploy
         uses: 10up/action-wordpress-plugin-deploy@stable
