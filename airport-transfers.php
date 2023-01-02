@@ -3,7 +3,7 @@
 Plugin Name: Airport Transfers
 Plugin URI:  https://github.com/atanasantonov/airport-transfers
 Description: Plugin delivers multilingual form for airport transfers
-Version:     1.1
+Version:     1.1.0
 Author:      Atanas Antonov
 Author URI:  https://unax.org
 License:     GPL2
