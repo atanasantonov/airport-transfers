@@ -14,7 +14,7 @@ Domain Path: /languages/
 
 defined( 'ABSPATH' ) or die( 'I can\'t do anything alone! Sorry!' );
 
-define( 'NS_AIRPORT_TRANSFERS_VERSION', '1.1' );
+define( 'NS_AIRPORT_TRANSFERS_VERSION', '1.1.0' );
 define( 'NS_AIRPORT_TRANSFERS_PATH', plugin_dir_path( __FILE__ ) );
 define( 'NS_AIRPORT_TRANSFERS_URL', plugins_url( '/', __FILE__ ) );
 
